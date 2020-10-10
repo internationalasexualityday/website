@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    --bGColor1: #836d98ff;
+    --bGColor2: white;
+    --fontColor1: #7d52a8;
+
+    background-color: var(--bGColor1);
+    
+    font-family: 'Montserrat';
+}
+
+#main {
+    background-color: var(--bGColor1);
+    padding: 2%;
+}
+
+.container {
+    background-color: var(--bGColor2);
+    padding: 1% 5% 1% 5%;
+    margin-top: 2%;
+    border-radius: 4px;
+}
+
+#header-container {
+    display: flex;
+    justify-content: center;
+}
+
+#nav-container {
+    /* margin: 1%; */
+}
+
+#nav-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+/*     flex-basis: 25%; */
+    flex-wrap: wrap;
+    flex: 1 0 10px;
+}
+
+.nav-list-item {
+    font-weight: 600;
+    font-family: 'Montserrat';
+/*     font-weight: medium this worked */
+}
+
+.nav-list-item a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-list-item a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-list-item a:hover {
+    text-decoration: none;
+    color: var(--fontColor1);
+}
+
+.nav-list-item a:active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#name-brand {
+    color: var(--fontColor1);
+    font-weight: 600;
+}
+
+h2 {
+    color: black;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-variant: small-caps;
+}
+
+h3 {
+    color: grey;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+h4 {
+    color: black;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-style: italic;
+}
+
+p{
+    font-family: 'Times New Roman';
+}
+
+#logo {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 40px;
+    font-style: italic;
+    color: var(--fontColor1);
+    text-align: center;
+    text-decoration: none;
+    padding: 40px;
+/*     border-radius: 4px; */
+}
+
+.no-underline {
+  text-decoration: none;
+}
