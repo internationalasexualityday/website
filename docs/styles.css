@@ -6,15 +6,18 @@ body {
     --bGColor1: #836d98ff;
     --bGColor2: white;
     --fontColor1: #7d52a8;
-
+    --bannerBg: #a24192;
     background-color: var(--bGColor1);
     font-family: 'Roboto';
+    padding: 0;
+    margin: 0;
 }
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-family:NotoSerifTC;}
 
 #main {
     background-color: var(--bGColor1);
     padding: 2%;
+    background-image: linear-gradient(0, transparent, var(--bannerBg));
 }
 
 .container {
@@ -29,9 +32,7 @@ body {
     justify-content: center;
 }
 
-#nav-container {
-    /* margin: 1%; */
-}
+#nav-container {margin-top: 0;display: grid;grid-template-columns: 35px auto;align-items: center;grid-gap: 1rem;background-color: transparent;background-image: linear-gradient(0, #a24192ff, #a24192cc);position: sticky;top: 0;}
 
 #nav-list {
     list-style: none;
@@ -39,9 +40,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-/*     flex-basis: 25%; */
     flex-wrap: wrap;
     flex: 1 0 10px;
+    margin: 0;
 }
 
 .nav-list-item {
@@ -52,7 +53,7 @@ body {
 
 .nav-list-item a:link {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .nav-list-item a:visited {
@@ -100,17 +101,28 @@ p{
 }
 
 #logo {
-    
     font-weight: 600;
     font-size: 40px;
     font-style: italic;
     color: var(--fontColor1);
     text-align: center;
     text-decoration: none;
-    padding: 40px;
-/*     border-radius: 4px; */
 }
 
 .no-underline {
   text-decoration: none;
+}
+img.nav-logo {
+    max-height: 35px;
+}
+
+div#body-container {
+    margin-top: -45px;
+}
+
+header {
+    background-color: var(--bannerBg);
+}
+.container h2, .container p {
+    text-align: center;
 }
