@@ -8,9 +8,9 @@ body {
     --fontColor1: #7d52a8;
 
     background-color: var(--bGColor1);
-    
-    font-family: 'Montserrat';
+    font-family: 'Roboto';
 }
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-family:NotoSerifTC;}
 
 #main {
     background-color: var(--bGColor1);
@@ -46,7 +46,7 @@ body {
 
 .nav-list-item {
     font-weight: 600;
-    font-family: 'Montserrat';
+    
 /*     font-weight: medium this worked */
 }
 
@@ -77,20 +77,20 @@ body {
 
 h2 {
     color: black;
-    font-family: 'Montserrat';
+    
     font-weight: 500;
     font-variant: small-caps;
 }
 
 h3 {
     color: grey;
-    font-family: 'Montserrat';
+    
     font-weight: 500;
 }
 
 h4 {
     color: black;
-    font-family: 'Montserrat';
+    
     font-weight: 500;
     font-style: italic;
 }
@@ -100,7 +100,7 @@ p{
 }
 
 #logo {
-    font-family: 'Montserrat';
+    
     font-weight: 600;
     font-size: 40px;
     font-style: italic;
