@@ -179,6 +179,7 @@ nav.main-menu a:visited {
     background-color: #fff;
     color: #000;
     padding-top: 1em;
+	overflow: scroll;
 }
 
 .mobile-nav__sheet ul li a {
@@ -187,15 +188,25 @@ nav.main-menu a:visited {
 
 .mobile-nav__sheet .language-selector {
     line-height: 27px;
+	height: auto;
+	overflow: initial;
+	margin-top: 2em;
+	flex-direction: column;
 }
 
 .mobile-nav__sheet .language-selector ul.navbar {
-    left: 16%;
+    left: 0%;
     max-width: 100%;
+	position: relative;
 }
 
 .mobile-nav__sheet .language-selector ul.navbar li {
-    padding: 10px 12px;
+    padding: 10px 0;
+}
+
+.mobile-nav__sheet .language-icon {
+	width: 30px;
+	margin-bottom: 1em;
 }
 
 .mobile-nav__navbar li {
@@ -211,6 +222,10 @@ nav.main-menu a:visited {
 
 body {
     font-family: 'Roboto';
+}
+
+body.js-nav-open {
+	overflow: hidden;
 }
 
 .footer {
