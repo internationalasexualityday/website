@@ -63,6 +63,10 @@ html{font-family:"Garamond Premier Pro",Charter,"Times New Roman",serif;font-siz
     justify-content: space-between;
 }
 
+[dir="rtl"] .layout__header {
+	flex-direction: row-reverse;
+}
+
 .language-selector li {
     display: flex;
     flex-basis: 100%;
@@ -71,11 +75,19 @@ html{font-family:"Garamond Premier Pro",Charter,"Times New Roman",serif;font-siz
     padding: 0.75em;
 }
 
+[dir="rtl"] .language-selector li {
+	justify-content: flex-end;
+}
+
 .language-selector {
     height: 48px;
     overflow: hidden;
     position: relative;
     width: 220px;
+}
+
+[dir="rtl"] .language-selector {
+	flex-direction: row-reverse;
 }
 
 .language-selector ul.navbar {
@@ -200,6 +212,10 @@ table.orga td, table.contact td {
 
 table.orga td:first-child, table.contact td:first-child {
 	width: 35px;
+}
+
+[dir="rtl"] .header__site-name {
+    text-align: left;
 }
 
 @media (max-width: 576px) {
